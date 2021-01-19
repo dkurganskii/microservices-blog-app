@@ -21,8 +21,8 @@ comments.push({id: commentId, content})
 
 commentsByPostId[req.params.id] = comments
 
-res.dtatus(201).send(comments)
+res.status(201).send(comments)
 })
-app.listen(4000, ()=>{
-    console.log('Listening on 4000')
+app.listen(4001, ()=>{
+    console.log('Listening on 4001')
 })
