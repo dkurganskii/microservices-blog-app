@@ -36,6 +36,13 @@ await axios.post('http://localhost:4005/events',{
 
 res.status(201).send(comments)
 })
+
+app.post('/events', (req, res)=>{
+    console.log('Received Event', req.body.type)
+
+    res.send({})
+})
+
 app.listen(4001, ()=>{
     console.log('Listening on 4001')
 })
